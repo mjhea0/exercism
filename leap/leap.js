@@ -1,4 +1,4 @@
-var isLeapYear = function (year) {
+var isLeapYear = function(year) {
     if (year % 400 === 0) {
       return true;
     }
@@ -11,3 +11,7 @@ var isLeapYear = function (year) {
 };
 
 module.exports = isLeapYear;
+
+/*
+Years that are divisible by 100 are not leap years, unless they are also divisible by 400, in which case they are leap years.
+*/
