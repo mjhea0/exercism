@@ -1,6 +1,10 @@
+// constructor
+
 var Phone = function(number) {
   this.dirtyNumber = number;
 };
+
+// methods
 
 Phone.prototype.cleanNumber = function() {
   return this.dirtyNumber.replace(/[^0-9]/g, '');
@@ -8,7 +12,7 @@ Phone.prototype.cleanNumber = function() {
 
 Phone.prototype.hasExtraOne = function() {
   var num = this.cleanNumber();
-  return (num.length == 11 && num[0] === '1');
+  return (num.length === 11 && num[0] === '1');
 };
 
 Phone.prototype.number = function() {
