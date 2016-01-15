@@ -1,5 +1,7 @@
 toRoman = function(num) {
 
+  var output = '';
+
   var arabicToRoman = [
     {arabic: 1000, roman: 'M'},
     {arabic: 900, roman: 'CM'},
@@ -16,7 +18,15 @@ toRoman = function(num) {
     {arabic: 1, roman: 'I'}
   ];
 
-  return 'I';
+  for (var i = 0; i < arabicToRoman.length; i++) {
+    var mapping = arabicToRoman[i];
+    while (num >= mapping.arabic) {
+      output = output + mapping.roman;
+      num = num - mapping.arabic;
+    }
+  }
+
+  return output;
 
 };
 
