@@ -16,7 +16,10 @@ toRoman = function(num) {
     {arabic: 1, roman: 'I'}
   ];
 
-  return 'I';
+  // loop (for) through the array of objects (arabicToRoman)
+    // while num >= arabicToRoman[i].arabic
+      // add arabicToRoman[i].roman to a string
+      // num = num - arabicToRoman[i].arabic
 
 };
 
