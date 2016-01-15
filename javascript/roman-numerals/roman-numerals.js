@@ -20,7 +20,6 @@ toRoman = function(num) {
 
   for (var i = 0; i < arabicToRoman.length; i++) {
     var mapping = arabicToRoman[i];
-    console.log(mapping)
     while (num >= mapping.arabic) {
       output = output + mapping.roman;
       num = num - mapping.arabic;
