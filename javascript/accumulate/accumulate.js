@@ -6,6 +6,7 @@
 //   return result;
 // }
 
+
 function accumulate (arr, fn) {
   return arr.map(function(num){
     return fun(num);
